@@ -8,7 +8,9 @@
 
 I chose this paper because it provides knowledge which might be relevant for my thesis. Also it serves as a great use-case for the purpose of this lecture.
 
-#### 2. What is it about?
+#### 2. What is it about
+
+Title: **Quality Assurance for Spatial Research Data**
 
 Level 1: The authors propose a grading system for spatial data sources in In Earth System Sciences (ESS). The grading is 1-5 stars.
 
@@ -26,5 +28,5 @@ It is an article, because it said so in the top of the paper.
 
 #### 5. Unambiguous Url (or DOI)
 
-**[DOI: 10.3390/ijgi11060334]([https://](https://www.researchgate.net/publication/361076438_Quality_Assurance_for_Spatial_Research_Data))**
+[DOI: 10.3390/ijgi11060334](https://www.researchgate.net/publication/361076438_Quality_Assurance_for_Spatial_Research_Data)
 
