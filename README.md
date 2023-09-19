@@ -1,4 +1,4 @@
-# Read Me
+# README
 
 ## 5min Presentation 18.09.2023
 
@@ -30,3 +30,23 @@ It is an article, because it said so in the top of the paper.
 
 [DOI: 10.3390/ijgi11060334](https://www.researchgate.net/publication/361076438_Quality_Assurance_for_Spatial_Research_Data)
 
+## Main Messages
+
+1. The authors  present concepts and a workﬂow to assure the quality of ESS (Earth System Sciences) data with the outcome of a rating in the range of 1-5 (stars)
+2. The workflow is designed along the research **data life cycle** and includes criteria for **openness**, **FAIRness of data** (ﬁndable, accessible, interoperable, reusable), **data maturity**, and **data quality**
+3. The authors propose a revised **maturity matrix including a list of FAIR criteria** and **a spatial data quality matrix** which relates the maturity levels to quality metrics. The **quality and maturity levels are then assigned to the phases of the data lifecycle**.
+4. The authors implement an interactive questionnaire in the tool RDMO (research data management organizer)
+5. The authors rate the SPAM2010 (crop distribution) dataset a 3,5 Stars out of 5 as a proof of concept of their workflow
+
+### Process
+
+1. Assess openness
+2. Assess maturity (FAIRness ﬁndable, accessible, interoperable, reusable)
+3. Assess quality
+4. Comprise rating (1-5) by openness, maturity and quality
+
+![Rating](./rating.png)
+
+![data-lifecycle](./data-lifecycle.png)
+
+![timeline](./timeline.png)
