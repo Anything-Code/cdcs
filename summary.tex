@@ -40,7 +40,7 @@ christin.henzen@tu-dresden.de}
 \maketitle
 
 \begin{abstract}
-    For spatial data sources in Earth System Science (ESS), the authors (M. Wagner and C. Henzen) propose a revised maturity matrix including FAIR (Findable, Accessible, Interoperable and Reusable) criteria and a spatial data quality matrix where maturity levels are related to quality metrics. Both metrics are then mapped to phases within the research data lifecycle to produce a QA workflow, which the authors have implemented in the interactive questionnaire tool RDMO (Research Data Management Organiser). data lifecycle
+    For spatial data sources in Earth System Science (ESS), the authors (M. Wagner and C. Henzen) propose a revised maturity matrix including FAIR (Findable, Accessible, Interoperable and Reusable) criteria and a spatial data quality matrix where maturity levels are related to quality metrics. Both metrics are then mapped to phases within the research data lifecycle to produce a QA workflow, which the authors have implemented in the interactive questionnaire tool RDMO (Research Data Management Organiser).
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -48,12 +48,13 @@ quality assurance; data maturity; maturity matrix; spatial data quality; FAIR
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+The authors of \cite{wagner2022quality} recognised the level of quality of spatial data as an indication of the relevance of the extracted results of scientific work in the field. They suggest that there is a vacuum for tools to assess the quality of spatial data sources. In addition, despite the high quality of scientific data creation and manipulation workflows, the authors identified the monitoring and reporting of adequate information as a challenge in research data management (RDM). This leads to information being output only at the end or after the end of the data lifecycle.
 
-\section{Ease of Use}
+Both identified challenges are addressed in \cite{wagner2022quality}. A framework for quantifying the quality of data sources is proposed, where sources can be rated from 1 to 5 stars. A QA workflow that includes monitoring and reporting during the data lifecycle is also presented.
 
-\subsection{Maintaining the Integrity of the Specifications}
+\section{Propositions}
+
+\subsection{Assertion Framework} \label{AF}
 
 The IEEEtran class file is used to format your paper and style the text. All margins, 
 column widths, line spaces, and text fonts are prescribed; please do not 
@@ -63,28 +64,31 @@ and others are deliberate, using specifications that anticipate your paper
 as one part of the entire proceedings, and not as an independent document. 
 Please do not revise any of the current designations.
 
-\section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 
 separate text file. Complete all content and organizational editing before 
-formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
+formatting. Please note sections \ref{AF}-\ref{QAM} below for more information on 
 proofreading, spelling and grammar.
 
 Keep your text and graphic files separate until after the text has been 
 formatted and styled. Do not number text heads---{\LaTeX} will do that 
 for you.
 
-\subsection{Abbreviations and Acronyms}\label{AA}
+\subsection{Quality Assurance Workflow}\label{QAW}
 Define abbreviations and acronyms the first time they are used in the text, 
 even after they have been defined in the abstract. Abbreviations such as 
 IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
 abbreviations in the title or heads unless they are unavoidable \cite{wagner2022quality}.
 
-\subsection{Units}
 \begin{itemize}
 \item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive'' \cite{sjr}.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
 \end{itemize}
+
+\section{Proof Of Concept}
+
+Before you begin to format your paper, first write and save the content as a 
+separate text file. Complete all content and organizational editing before 
+formatting. Please note sections \ref{AF}-\ref{QAM} below for more information on 
+proofreading, spelling and grammar.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
