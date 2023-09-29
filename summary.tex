@@ -22,7 +22,7 @@
 
 \title{Quality Assurance for Spatial Research Data\\
 {\footnotesize A summary - Original by: M. Wagner and C. Henzen - Published in: ISPRS International Journal of Geo-Information, vol. 11, no. 6, p. 334, 2022 \cite{sjr}}
-\thanks{DOI of \cite{wagner2022quality}: \href{https://doi.org/10.3390/ijgi11060334}{10.3390/ijgi11060334} - \href{https://github.com/Anything-Code/quality-assurance-for-spatial-research-data-a-summary/blob/master/summary.tex}{LaTeX code}}
+\thanks{DOI of \cite{wagner2022quality}: \href{https://doi.org/10.3390/ijgi11060334}{10.3390/ijgi11060334} - LaTeX code of this summary: \href{https://github.com/Anything-Code/quality-assurance-for-spatial-research-data-a-summary/blob/master/summary.tex}{GitHub}}
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Niklas Lübcke}
@@ -47,7 +47,7 @@ christin.henzen@tu-dresden.de}
 \maketitle
 
 \begin{abstract}
-    The authors of \cite{wagner2022quality} propose an Assertion Framework (\ref{AF}) and a Quality Assurance Workflow (\ref{QAW}) for spatial data sources in Earth System Science (ESS). The framework is comprised of an evaluation of the 5-star rating system for open data by Tim Berners-Lee, a revised maturity matrix including FAIR (Findable, Accessible, Interoperable and Reusable) criteria and a spatial data quality matrix where maturity levels are related to quality metrics. The metrics of openness, maturity and quality are then mapped to phases within the research data lifecycle to produce the proposed QA workflow, which the authors have implemented in the interactive questionnaire tool RDMO (Research Data Management Organiser).
+    The authors of \cite{wagner2022quality} propose an Assertion Framework (\ref{AF}) and a Quality Assurance Workflow (\ref{QAW}) for spatial data sources in Earth System Science (ESS). The framework is comprised of an evaluation of the 5-star rating system for open data by Tim Berners-Lee, a revised maturity matrix including FAIR (Findable, Accessible, Interoperable and Reusable) criteria and a spatial data quality matrix where maturity levels are related to quality metrics. The metrics of openness, maturity and quality are then mapped to phases within the research data lifecycle to produce the proposed QA workflow.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -55,39 +55,41 @@ quality assurance; data maturity; maturity matrix; spatial data quality; FAIR
 \end{IEEEkeywords}
 
 \section{Introduction}
-M. Wagner and C. Henzen recognised the level of quality of spatial data as an indication of the relevance of the extracted results of scientific work in the field. They suggest that there is a vacuum for tools to assess the quality of spatial data sources. In addition, despite the high quality of scientific data creation and manipulation workflows, the authors identified the monitoring and reporting of adequate information as a challenge in research data management (RDM). This leads to information being output only at the end or after the end of the data lifecycle.
-
-Both of the challenges are addressed in \cite{wagner2022quality}. A framework for quantifying the quality of data sources is proposed, where sources can be rated from 1 to 5 stars. A QA workflow that includes monitoring and reporting during the data lifecycle is also presented.
+M. Wagner and C. Henzen recognised the level of quality of spatial data as an indication of the relevance of the extracted results of scientific work in the field. They suggest that there is a vacuum for tools to assess the quality of spatial data sources. In addition, despite the high quality of scientific data creation and manipulation workflows, the authors identified the monitoring and reporting of adequate information as a challenge in research data management (RDM). This leads to information being output only at the end or after the completion of the data lifecycle.
 
 \section{Results}
 
+The primary results of \cite{wagner2022quality} are the following, with the mapping of openness metrics to maturity and quality metrics being summarised in the Assertion Framework (\ref{AF})
+
+\begin{enumerate}
+    \item Assertion Framework (\ref{AF})
+    \item Quality Assurance Workflow (\ref{QAW})
+    \item Proof of Concept (\ref{POC})
+\end{enumerate}
+
 \subsection{Assertion Framework} \label{AF}
 
-The IEEEtran class file is used to format your paper and style the text. All margins, 
-column widths, line spaces, and text fonts are prescribed; please do not 
-alter them. You may note peculiarities. For example, the head margin
-measures proportionately more than is customary. 
+The aim of the Assertion Framework is to provide a tool for assessing the quality of spatial data sources according to the following categories:
 
-Before you begin to format your paper, first write and save the content as a 
-separate text file. Complete all content and organizational editing before 
-formatting. Please note sections \ref{AF}-\ref{QAW} below for more information on 
-proofreading, spelling and grammar.
+\begin{enumerate}
+    \item Openness
+    \item Data maturity
+    \item Data quality
+\end{enumerate}
+
+The authors of \cite{wagner2022quality} do not calculate an average of all the metrics or categories included. The output of the framework is 3 independent ratings between 1 and 5 stars.  The rating is created by following a ladder principle, where a higher step adds another aspect to the metrics of the data source.
+
+It is possible for categories to have limited rating ranges. As shown in \cite{wagner2022quality}, e.g. the openness category can only produce a rating between 2 and 4 stars.
 
 \subsection{Quality Assurance Workflow}\label{QAW}
-Define abbreviations and acronyms the first time they are used in the text, 
-even after they have been defined in the abstract. Abbreviations such as 
-IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
-abbreviations in the title or heads unless they are unavoidable \cite{wagner2022quality}.
 
-\begin{itemize}
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive'' \cite{sjr}.
-\end{itemize}
+To create the best possible data sources as part of the scientific data lifecycle \cite{wagner2022quality}, the metrics of \ref{AF} are mapped to each phase of the lifecycle and its appropriate roles to create a workflow that acts as a QA for scientific teams.
+
+Furthermore, the workflow was implemented as a plugin in the interactive questionnaire tool RDMO (Research Data Management Organiser), a Python software for self-hosting on the World Wide Web.
 
 \subsection{Proof Of Concept}\label{POC}
 
-Complete all content and organizational editing before 
-formatting. Please note sections \ref{AF}-\ref{QAW} below for more information on 
-proofreading, spelling and grammar.
+To apply their proposed framework, the authors rate and discuss SPAM2010 (A land use dataset) 3.5 stars in the openness category, 4 to 5 stars in the maturity category and 5 stars in the quality category.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
@@ -98,7 +100,7 @@ proofreading, spelling and grammar.
 \makeatletter
 \addtocounter{\@listctr}{2}
 \makeatother
-\bibitem{b1} Infographic of the proposed Assertion Framework and the QA Workflow
+\bibitem{infographic} Infographic of the proposed Assertion Framework and the QA Workflow
 \end{thebibliography}
 
 \end{document}
