@@ -1,3 +1,6 @@
+*.bbl
+*.blg
+*.out
 *.log
 *.out
 *.lot

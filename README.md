@@ -1,4 +1,4 @@
-# README
+# Quality Assurance for Spatial Research Data - A Summary
 
 ## 5min Presentation 18.09.2023
 
